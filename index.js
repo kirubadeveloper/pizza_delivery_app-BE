@@ -20,6 +20,6 @@ app.use("/api/users", userRoutes);
 app.use("/api/auth", authRoutes);
 
 const PORT = process.env.PORT || 8080;
-app.listen('https://pizza-delivery-app-be.onrender.com', () => {
+app.listen(PORT, () => {
   console.log(`Listening to port ${PORT}`);
 });
